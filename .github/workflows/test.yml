@@ -18,7 +18,10 @@ jobs:
         with:
           node-version: 14
 
-      - name: Install and Build
+      - name: Install
         run: |
           npm install
+
+      - name: Test
+        run: |
           npm test
